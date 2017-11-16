@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="imageLogoTop">64dp</dimen>
-    <dimen name="menuPaddingTop">8dp</dimen>
-    <dimen name="menuTextSize">12sp</dimen>
-    <dimen name="menuTextMarginTop">5dp</dimen>
-</resources>
