@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="placeholder_cpf">CPF</string>
+    <string name="bottomMenu_home">TELA\nINICIAL</string>
+    <string name="bottomMenu_virtualStore">LOJA\nVIRTUAL</string>
+    <string name="bottomMenu_blog">BLOG</string>
+    <string name="bottomMenu_cards">CARTÕES\nRENNER</string>
+    <string name="bottomMenu_more">MAIS</string>
+    <string name="button_login">prosseguir</string>
+    <string name="text_help">dúvidas</string>
+    <string name="loginStep_welcome">olá Cláudio, digite a senha de\ncompra do seu cartão</string>
+    <string name="not_me_leave">não sou eu, quero sair</string>
+</resources>

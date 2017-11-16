@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottomMenu_item_paddingTop">8dp</dimen>
+    <dimen name="bottomMenu_text_size">12sp</dimen>
+    <dimen name="bottomMenu_text_marginTop">5dp</dimen>
+    <dimen name="button_radius_one">7dp</dimen>
+    <dimen name="stepDot_size">11dp</dimen>
+    <dimen name="stepDot_marginBetween">16dp</dimen>
+    <dimen name="passwordInput_passwordText_size">16sp</dimen>
+    <dimen name="footerMenu_main_height">100dp</dimen>
+    <dimen name="loginStep_content_paddingHorizontal">75dp</dimen>
+</resources>

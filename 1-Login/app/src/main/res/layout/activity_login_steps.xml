@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vinicius.login.LoginStepsActivity">
+
+    <!-- Content Top -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/loginStep_content_paddingHorizontal"
+        android:paddingRight="@dimen/loginStep_content_paddingHorizontal"
+        android:paddingTop="20dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/medium_transparent_logo" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:text="@string/loginStep_welcome"
+            android:textAlignment="center" />
+
+        <!-- Steps Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_transparent_lock_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="@dimen/stepDot_size"
+                        android:layout_height="@dimen/stepDot_size"
+                        android:layout_marginEnd="@dimen/stepDot_marginBetween"
+                        android:background="@drawable/circle_black" />
+
+                    <View
+                        android:layout_width="@dimen/stepDot_size"
+                        android:layout_height="@dimen/stepDot_size"
+                        android:layout_marginEnd="@dimen/stepDot_marginBetween"
+                        android:background="@drawable/circle_black" />
+
+                    <View
+                        android:layout_width="@dimen/stepDot_size"
+                        android:layout_height="@dimen/stepDot_size"
+                        android:layout_marginEnd="@dimen/stepDot_marginBetween"
+                        android:background="@drawable/circle_white_stroke_black" />
+
+                    <View
+                        android:layout_width="@dimen/stepDot_size"
+                        android:layout_height="@dimen/stepDot_size"
+                        android:layout_marginEnd="@dimen/stepDot_marginBetween"
+                        android:background="@drawable/circle_white_stroke_black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="@android:color/background_dark" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Content Center -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/loginStep_content_paddingHorizontal"
+        android:paddingRight="@dimen/loginStep_content_paddingHorizontal">
+        <!-- Password Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp">
+
+            <include layout="@layout/view_password_input" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Content End -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/footerMenu_main_height"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="26dp"
+        android:paddingLeft="@dimen/loginStep_content_paddingHorizontal"
+        android:paddingRight="@dimen/loginStep_content_paddingHorizontal">
+
+        <!-- Login Button -->
+        <TextView
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_rounded_background_black"
+            android:gravity="center"
+            android:text="@string/button_login"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!-- Options -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/not_me_leave" />
+    </LinearLayout>
+
+    <!-- Menu Bottom -->
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/view_footer_menu" />
+    </LinearLayout>
+
+</RelativeLayout>
