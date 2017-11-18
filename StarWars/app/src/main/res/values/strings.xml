@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StarWars</string>
+    <string name="viewMenuList_people">People</string>
+    <string name="viewMenuList_planets">Planets</string>
+    <string name="viewMenuList_film">Film</string>
+    <string name="viewMenuList_starship">Starship</string>
+    <string name="home_title">Star Wars</string>
+    <string name="people_title">People</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/default_margin_space"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:elevation="@dimen/viewMenuList_item_elevation"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/default_margin_space"
+        android:paddingStart="@dimen/default_margin_space">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/man_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin_space"
+            android:text="@string/viewMenuList_people"
+            android:textSize="@dimen/viewMenuList_itemText_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/default_margin_space"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:elevation="@dimen/viewMenuList_item_elevation"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/default_margin_space"
+        android:paddingStart="@dimen/default_margin_space">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/starship" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin_space"
+            android:text="@string/viewMenuList_starship"
+            android:textSize="@dimen/viewMenuList_itemText_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/default_margin_space"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:elevation="@dimen/viewMenuList_item_elevation"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/default_margin_space"
+        android:paddingStart="@dimen/default_margin_space">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/movie_symbol_of_video_camera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin_space"
+            android:text="@string/viewMenuList_film"
+            android:textSize="@dimen/viewMenuList_itemText_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:elevation="@dimen/viewMenuList_item_elevation"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/default_margin_space"
+        android:paddingStart="@dimen/default_margin_space">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/earth_globe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin_space"
+            android:text="@string/viewMenuList_planets"
+            android:textSize="@dimen/viewMenuList_itemText_size" />
+    </LinearLayout>
+</LinearLayout>

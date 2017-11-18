@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_margin_space">16dp</dimen>
+    <dimen name="viewMenuList_itemText_size">16sp</dimen>
+    <dimen name="viewMenuList_item_elevation">2dp</dimen>
+</resources>
