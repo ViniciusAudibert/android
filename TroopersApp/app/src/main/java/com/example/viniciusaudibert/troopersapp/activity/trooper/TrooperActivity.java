@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -38,11 +40,24 @@ public class TrooperActivity extends AppCompatActivity implements TrooperAdapter
         setTroopersRecycleView();
     }
 
-    private SharedPreferences getSharedPreferences() {
-        return getSharedPreferences(
-                SharedPreferencesConstants.PREFS_NAME,
-                MODE_PRIVATE
-        );
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater()
+                .inflate(R.menu.trooper_add_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.plus_icon:
+                Toast.makeText(this, "T", Toast.LENGTH_SHORT).show();
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 
     @Override
@@ -95,5 +110,12 @@ public class TrooperActivity extends AppCompatActivity implements TrooperAdapter
 
         trooperAdapter = new TrooperAdapter(troopers, this, this);
         rvTroopers.setAdapter(trooperAdapter);
+    }
+
+    private SharedPreferences getSharedPreferences() {
+        return getSharedPreferences(
+                SharedPreferencesConstants.PREFS_NAME,
+                MODE_PRIVATE
+        );
     }
 }

@@ -54,4 +54,8 @@ public class TrooperRepository {
 
         sharedPreferencesUtil.save(SharedPreferencesConstants.TROOPER_LIST, json);
     }
+
+    public static void saveTrooper(Trooper trooper) {
+        TROOPERS.add(trooper);
+    }
 }
