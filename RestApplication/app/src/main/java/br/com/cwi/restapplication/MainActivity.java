@@ -1,5 +1,6 @@
 package br.com.cwi.restapplication;
 
+import android.content.Intent;
 import android.graphics.Movie;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.widget.EditText;
 import java.util.ArrayList;
 
 import br.com.cwi.restapplication.Adapters.MoviewListAdapter;
+import br.com.cwi.restapplication.Constants.ExtraConstants;
 import br.com.cwi.restapplication.Models.MovieModel;
 import br.com.cwi.restapplication.Responses.MovieSearchByNameResponse;
 import br.com.cwi.restapplication.Services.MovieService;
@@ -20,7 +22,7 @@ import br.com.cwi.restapplication.Services.NetworkService;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity implements Callback<MovieSearchByNameResponse> {
+public class MainActivity extends AppCompatActivity implements Callback<MovieSearchByNameResponse>, MoviewListAdapter.OnItemClickListener {
 
     private MovieService movieService;
     private EditText editText;
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements Callback<MovieSea
         recyclerView = findViewById(R.id.recycler_view);
         GridLayoutManager layoutManager = new GridLayoutManager(this,3);
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new MoviewListAdapter(movieModels);
+        adapter = new MoviewListAdapter(movieModels, this);
         recyclerView.setAdapter(adapter);
 
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
@@ -69,5 +71,13 @@ public class MainActivity extends AppCompatActivity implements Callback<MovieSea
     @Override
     public void onFailure(retrofit2.Call<MovieSearchByNameResponse> call, Throwable t) {
         Log.e("erro", t.getMessage());
+    }
+
+    @Override
+    public void onItemClick(String id) {
+        Intent intent = new Intent(this, MoviewDetailActivity.class);
+
+        intent.putExtra(ExtraConstants.ID, id);
+        startActivity(intent);
     }
 }

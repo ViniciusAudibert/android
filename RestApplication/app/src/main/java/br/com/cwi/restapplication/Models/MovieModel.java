@@ -23,6 +23,28 @@ public class MovieModel {
     @SerializedName("Poster")
     private String poster;
 
+    @SerializedName("Plot")
+    private String plot;
+
+    @SerializedName("Response")
+    private String response;
+
+    public String getPlot() {
+        return plot;
+    }
+
+    public void setPlot(String plot) {
+        this.plot = plot;
+    }
+
+    public String getResponse() {
+        return response;
+    }
+
+    public void setResponse(String response) {
+        this.response = response;
+    }
+
     public String getTitle() {
         return title;
     }
